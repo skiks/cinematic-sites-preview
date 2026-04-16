@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tanah Lot — Brand Card</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d0a08;
+  --card:#18120e;
+  --text:#f5ede0;
+  --muted:#a08870;
+  --accent:#e77d3c;
+  --accent-2:#d4a244;
+  --border:#2a1f16;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;font-weight:300;line-height:1.65}
+body{max-width:980px;margin:3rem auto;padding:0 1.5rem 6rem}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:.7rem;text-transform:uppercase;letter-spacing:.3em;color:var(--accent);font-weight:600}
+h1{font-family:'Cormorant Garamond',serif;font-size:4.5rem;font-weight:400;line-height:1;letter-spacing:-.01em;margin-top:.6rem}
+h1 em{color:var(--accent)}
+.sub{color:var(--muted);font-size:1.15rem;margin-top:1rem;max-width:52ch}
+h2{font-family:'JetBrains Mono',monospace;font-size:.75rem;text-transform:uppercase;letter-spacing:.25em;color:var(--muted);font-weight:600;margin-top:4rem;margin-bottom:1.25rem;padding-bottom:.75rem;border-bottom:1px solid var(--border)}
+.grid{display:grid;gap:1rem}
+.palette{grid-template-columns:repeat(4,1fr)}
+.swatch{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.chip{height:120px;display:flex;align-items:flex-end;padding:1rem}
+.chip code{font-family:'JetBrains Mono',monospace;font-size:.7rem;background:rgba(0,0,0,.6);padding:2px 8px;border-radius:4px;color:var(--text)}
+.swatch .meta{padding:.85rem 1rem 1rem;font-size:.85rem;color:var(--muted)}
+.swatch .meta strong{display:block;color:var(--text);font-weight:500;margin-bottom:.15rem}
+.fonts{grid-template-columns:1fr 1fr}
+.font-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:2rem}
+.font-card .label{font-family:'JetBrains Mono',monospace;font-size:.7rem;text-transform:uppercase;letter-spacing:.2em;color:var(--accent);margin-bottom:1.2rem}
+.font-card .sample{font-size:2.2rem;line-height:1.15;color:var(--text)}
+.font-card .alt{color:var(--muted);margin-top:.7rem;font-size:.9rem}
+.serif{font-family:'Cormorant Garamond',serif}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.info{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.5rem 1.75rem}
+.info .row{display:flex;justify-content:space-between;padding:.55rem 0;border-bottom:1px dashed var(--border);font-size:.95rem}
+.info .row:last-child{border-bottom:0}
+.info .row span:first-child{color:var(--muted)}
+.info .row span:last-child{color:var(--text);font-weight:500}
+.bullets{list-style:none;padding:0}
+.bullets li{padding:.4rem 0;padding-left:1.3rem;position:relative;color:var(--text)}
+.bullets li::before{content:'';position:absolute;left:0;top:1rem;width:8px;height:1px;background:var(--accent)}
+.note{background:rgba(231,125,60,.08);border:1px solid rgba(231,125,60,.25);border-radius:10px;padding:1rem 1.25rem;font-size:.9rem;color:var(--muted);margin-top:1.5rem}
+.note strong{color:var(--accent);font-weight:600}
+.tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:2rem;color:var(--text);margin-bottom:.5rem;line-height:1.2}
+.tagline-en{font-family:'Outfit',sans-serif;color:var(--muted);font-size:1rem}
+@media (max-width:720px){h1{font-size:3rem}.palette,.fonts,.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="eyebrow">Brand card · tanahlot.id</div>
+<h1>Tanah <em>Lot</em></h1>
+<p class="sub">Daya Tarik Wisata Tanah Lot — the official management of Pura Tanah Lot, a 16th-century Hindu sea temple perched on a rocky outcrop in Tabanan, Bali.</p>
+
+<div class="note"><strong>Note —</strong> The live site is Cloudflare-protected so I could not scrape brand colors/fonts directly. The palette and type below are my proposal based on the subject matter (temple stone, volcanic rock, Indian Ocean, sunset silhouette, firelight Kecak). Correct anything that's off.</div>
+
+<h2>Tagline</h2>
+<div class="tagline">"Pura Tanah Lot — Jiwa Laut Bali"</div>
+<div class="tagline-en">The Sea Temple that Holds the Sunset</div>
+
+<h2>Color palette</h2>
+<div class="grid palette">
+  <div class="swatch"><div class="chip" style="background:#0d0a08"><code>#0d0a08</code></div><div class="meta"><strong>--bg</strong>Volcanic night</div></div>
+  <div class="swatch"><div class="chip" style="background:#e77d3c"><code>#e77d3c</code></div><div class="meta"><strong>--accent</strong>Sunset orange</div></div>
+  <div class="swatch"><div class="chip" style="background:#d4a244"><code>#d4a244</code></div><div class="meta"><strong>--accent-2</strong>Temple gold</div></div>
+  <div class="swatch"><div class="chip" style="background:#f5ede0;color:#1a1410"><code style="background:rgba(255,255,255,.7);color:#1a1410">#f5ede0</code></div><div class="meta"><strong>--text</strong>Warm sandstone</div></div>
+  <div class="swatch"><div class="chip" style="background:#18120e"><code>#18120e</code></div><div class="meta"><strong>--card</strong>Deep stone</div></div>
+  <div class="swatch"><div class="chip" style="background:#a08870"><code>#a08870</code></div><div class="meta"><strong>--muted</strong>Weathered wood</div></div>
+  <div class="swatch"><div class="chip" style="background:#2a1f16"><code>#2a1f16</code></div><div class="meta"><strong>--border</strong>Subtle divider</div></div>
+</div>
+
+<h2>Typography</h2>
+<div class="grid fonts">
+  <div class="font-card">
+    <div class="label">Heading · Cormorant Garamond</div>
+    <div class="sample serif">Jiwa Laut Bali</div>
+    <div class="alt">Serif with cultural gravitas — evokes heritage and ritual.</div>
+  </div>
+  <div class="font-card">
+    <div class="label">Body · Outfit</div>
+    <div class="sample">The sea temple that holds the sunset.</div>
+    <div class="alt">Modern, clean, highly legible over video.</div>
+  </div>
+</div>
+
+<h2>Tickets (from official price page)</h2>
+<div class="two">
+  <div class="info">
+    <div class="row"><span>Domestik — Dewasa</span><span>IDR 30,000</span></div>
+    <div class="row"><span>Domestik — Anak</span><span>IDR 20,000</span></div>
+    <div class="row"><span>Foreign — Adult</span><span>IDR 75,000</span></div>
+    <div class="row"><span>Foreign — Child</span><span>IDR 40,000</span></div>
+  </div>
+  <div class="info">
+    <div class="row"><span>Kecak &amp; Fire Dance</span><span>Daily 18:00</span></div>
+    <div class="row"><span>Temple hours</span><span>07:00 – 19:00</span></div>
+    <div class="row"><span>Phone</span><span>(0361) 880361</span></div>
+    <div class="row"><span>Address</span><span>Beraban, Tabanan</span></div>
+  </div>
+</div>
+
+<h2>What makes it cinematic</h2>
+<ul class="bullets">
+  <li>Temple silhouette against molten-orange sunset — Bali's single most photographed view</li>
+  <li>Waves crashing against the rocky outcrop; at high tide the temple appears to float</li>
+  <li>Kecak fire dance at sunset — 50+ men chanting "cak-cak-cak" around firelight</li>
+  <li>One of 7 sacred sea temples forming a spiritual chain around Bali's coast</li>
+  <li>Sacred Ular Suci (temple sea snakes) in the caves beneath the rock</li>
+  <li>Tirta Pabersihan — holy spring where priests bless visitors at the rock's base</li>
+</ul>
+
+<h2>Suggested hero subject</h2>
+<ul class="bullets">
+  <li>Lead candidate: <strong>silhouetted temple on the rock, backlit by a molten sunset, waves crashing, camera push-in</strong></li>
+  <li>Alternative: <strong>slow-motion firelight Kecak dance circle with embers rising</strong></li>
+  <li>Alternative: <strong>cinematic close-up of canang sari offerings + frangipani + holy water, temple out of focus in background</strong></li>
+</ul>
+
+</body>
+</html>
